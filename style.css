@@ -169,3 +169,77 @@ input[readonly] {
     transform: scale(1.05);
 }
 
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+input[type="button"],
+input[type="number"],
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.display {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: rgb(11, 223, 163);
+}
+
+.operator {
+  background-color: rgb(177, 177, 177);
+}
+
+.clear {
+  background-color: rgb(252, 179, 10);
+}
+
+.calculator-section {
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button.circle-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  input[type="button"],
+  input[type="number"],
+  input[type="text"],
+  select {
+    flex: 1 1 22%;
+    margin: 5px;
+  }
+
+  .display {
+    flex-basis: 100%;
+  }
+}
